@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SST + SGA | Grupo Kallas</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">🧠 Sistema SST + SGA</p>
+          <h1>Chat operacional Grupo Kallas</h1>
+          <p class="subtitle">
+            Atendimento estilo WhatsApp para riscos de obra, SGA, PGR/GRO,
+            investigação e análise automática de imagens com Gemini.
+          </p>
+        </div>
+        <div class="status" id="status">Conectando servidor...</div>
+      </section>
+
+      <section class="chat-card" aria-label="Chat SST SGA">
+        <div class="chat-header">
+          <div>
+            <strong>TST Operacional</strong>
+            <span>Respostas curtas, diretas e com validação de campo</span>
+          </div>
+          <button id="menuButton" type="button">Menu</button>
+        </div>
+
+        <div class="messages" id="messages" aria-live="polite"></div>
+
+        <form id="chatForm" class="composer">
+          <label class="attach" for="imageInput" title="Enviar imagem para análise automática">
+            📷
+            <input id="imageInput" type="file" accept="image/*" multiple />
+          </label>
+          <div class="input-area">
+            <div id="preview" class="preview"></div>
+            <textarea
+              id="messageInput"
+              rows="2"
+              placeholder="Digite sua dúvida de SST/SGA ou envie uma foto da frente de serviço..."
+            ></textarea>
+          </div>
+          <button id="sendButton" type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
