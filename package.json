@@ -1,0 +1,14 @@
+{
+  "name": "sst-sga-kallas-chatbot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chatbot operacional SST + SGA Grupo Kallas com Gemini e banco local automático.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --check server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
